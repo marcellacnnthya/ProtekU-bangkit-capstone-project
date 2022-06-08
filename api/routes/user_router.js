@@ -29,7 +29,7 @@ router.post('/register', userMiddleware.validateRegister, (req, res, next) => {
           } else {
             // has hashed pw => add to database
             db.query(
-              `INSERT INTO users (userId, name, email, password, gender, phoneNumber, emergencyNumber1, emergencyNumber2) VALUES ('${uuid.v4()}', ${db.escape(req.body.name)} , ${db.escape(
+              `INSERT INTO users (id, name, email, password, gender, phoneNumber, emergencyNumber1, emergencyNumber2) VALUES ('${uuid.v4()}', ${db.escape(req.body.name)} , ${db.escape(
                 req.body.email)}, ${db.escape(hash)}, ${db.escape(req.body.gender)}, ${db.escape(req.body.phoneNumber)}, ${db.escape(req.body.emergencyNumber1)}, ${db.escape(req.body.emergencyNumber2)})`,
               (err, result) => {
                 if (err) {
@@ -94,7 +94,7 @@ router.post('/login', (req, res, next) => {
             );
 
             db.query(
-              `UPDATE users WHERE userId = '${result[0].userId}'`
+              `UPDATE users WHERE id = '${result[0].id}'`
             );
             return res.status(200).send({
               msg: 'Log In Berhasil!',
@@ -129,9 +129,9 @@ router.get('/', (req, res, next)=>{
 	});
 });
 
-router.get('/:userId', (req, res, next)=>{
+router.get('/:id', (req, res, next)=>{
 	db.query( 
-		 `SELECT * FROM users WHERE userId= ${db.escape(req.params.userId)};`,
+		 `SELECT * FROM users WHERE id= ${db.escape(req.params.id)};`,
 		 (err, result) => {
       // user does not exists
       if (err) {
@@ -147,7 +147,7 @@ router.get('/:userId', (req, res, next)=>{
 	});
 });
 		
-router.put('/:userId', (req, res, next)=>{
+router.put('/:id', (req, res, next)=>{
 	bcrypt.hash(req.body.password, 10, (err, hash) => {
         if (err) {
           return res.status(500).send({
@@ -158,7 +158,7 @@ router.put('/:userId', (req, res, next)=>{
 			db.query( 
 			`UPDATE users SET name=${db.escape(req.body.name)}, email=${db.escape(req.body.email)}, password=${db.escape(req.body.password)}, 
 			gender=${db.escape(req.body.gender)}, phoneNumber=${db.escape(req.body.phoneNumber)}, emergencyNumber1=${db.escape(req.body.emergencyNumber1)},
-			emergencyNumber2=${db.escape(req.body.emergencyNumber2)} WHERE userId= ${db.escape(req.params.userId)};`,
+			emergencyNumber2=${db.escape(req.body.emergencyNumber2)} WHERE id= ${db.escape(req.params.id)};`,
 			(err, result) => {
 			// user does not exists
 				if (err) {
