@@ -1,19 +1,21 @@
-// index.js
-
+'use strict';
 const express = require('express');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const config = require('./config');
+
+const userRoutes = require('./routes/report-routes');
+const reportRoutes = require('./routes/user-routes');
+
 const app = express();
 
-// set up port
-const PORT = process.env.PORT || 3000;
-
 app.use(express.json());
+app.use(cors());
+app.use(bodyParser.json());
 
-// add routes
-const userRouter = require('./routes/user_router.js');
-app.use('/api/users', userRouter);
+app.use('/api', userRoutes.routes);
+app.use('/api', reportRoutes.routes);
 
-const reportRouter = require('./routes/report_router.js');
-app.use('/api/report', reportRouter);
 
-// run server
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+app.listen(config.port, () => console.log('App is listening on url http://localhost:' + config.port));
