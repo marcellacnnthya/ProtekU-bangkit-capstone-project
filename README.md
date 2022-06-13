@@ -5,11 +5,11 @@ Sexual harassment cases in Indonesia is one of the most critical issue in Indone
 
 
 ## Documentation
-Mobile Development
+### Mobile Development
 [Mobile Development Documentation](https://github.com/marcellacnnthya/ProtekU-bangkit-capstone-project/blob/main/android-develompment/Proteku_App/README.md)
-Cloud Computing
+### Cloud Computing
 [Cloud Computing Documentation](https://github.com/marcellacnnthya/ProtekU-bangkit-capstone-project/blob/main/cloud-computing/api/README.md)
-Machine Learning
+### Machine Learning
 [Machine Learning Documentation]
 
 ## Members of the Team
