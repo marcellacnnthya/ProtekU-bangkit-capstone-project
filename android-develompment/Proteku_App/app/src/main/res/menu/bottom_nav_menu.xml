@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_emergencycontact"
+        android:icon="@drawable/ic_emergency_contact"
+        android:title="@string/emergency_contact" />
+
+    <item
+        android:id="@+id/navigation_reportForm"
+        android:icon="@drawable/ic_report_form"
+        android:title="@string/riwayat_laporan" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_provile"
+        android:title="@string/profile"/>
+
+</menu>

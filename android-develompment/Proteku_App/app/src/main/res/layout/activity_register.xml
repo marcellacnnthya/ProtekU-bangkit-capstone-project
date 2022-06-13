@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    tools:context=".RegisterActivity">
+
+
+    <EditText
+        android:id="@+id/name_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="left"
+        android:text="Nama Lengkap*"
+        android:textColor="#9797BF"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="left"
+        android:text="Email*"
+        android:textColor="#9797BF"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/name_signup"
+        app:layout_constraintStart_toStartOf="@+id/name_signup"
+        app:layout_constraintTop_toBottomOf="@+id/name_signup" />
+
+    <EditText
+        android:id="@+id/password_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="left"
+        android:text="Kata Sandi*"
+        android:textColor="#9797BF"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/email_signup"
+        app:layout_constraintStart_toStartOf="@+id/email_signup"
+        app:layout_constraintTop_toBottomOf="@+id/email_signup" />
+
+    <TextView
+        android:id="@+id/notif_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="left"
+        android:text="Minimal terdiri dari 8 karakter"
+        android:textColor="#9797BF"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="@+id/password_signup"
+        app:layout_constraintStart_toStartOf="@+id/password_signup"
+        app:layout_constraintTop_toBottomOf="@+id/password_signup" />
+
+    <EditText
+        android:id="@+id/notlp_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="left"
+        android:text="Nomor Telepon"
+        android:textColor="#9797BF"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/notif_password"
+        app:layout_constraintStart_toStartOf="@+id/notif_password"
+        app:layout_constraintTop_toBottomOf="@+id/notif_password" />
+
+    <EditText
+        android:id="@+id/gender_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins"
+        android:textColor="#9797BF"
+        android:textSize="13sp"
+        android:text="Jenis Kelamin"
+        app:layout_constraintEnd_toEndOf="@+id/notlp_signup"
+        app:layout_constraintStart_toStartOf="@+id/notlp_signup"
+        app:layout_constraintTop_toBottomOf="@+id/notlp_signup" />
+
+    <EditText
+        android:id="@+id/birth_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="left"
+        android:text="Tanggal Lahir"
+        android:textColor="#9797BF"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/gender_signup"
+        app:layout_constraintStart_toStartOf="@+id/gender_signup"
+        app:layout_constraintTop_toBottomOf="@+id/gender_signup" />
+
+    <EditText
+        android:id="@+id/emergency_contact_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="left"
+        android:text="Masukan kontak darurat*"
+        android:textColor="#9797BF"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/birth_signup"
+        app:layout_constraintStart_toStartOf="@+id/birth_signup"
+        app:layout_constraintTop_toBottomOf="@+id/birth_signup" />
+
+    <CheckBox
+        android:id="@+id/cb_term_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="Saya menyetujui Syarat dan Ketentuan dan Kebijakan Privasi yang berlaku"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/emergency_contact_signup"
+        app:layout_constraintStart_toStartOf="@+id/emergency_contact_signup"
+        app:layout_constraintTop_toBottomOf="@+id/emergency_contact_signup" />
+
+    <Button
+        android:id="@+id/bt_daftar_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Daftar"
+        android:fontFamily="@font/poppins"
+        android:textSize="13sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cb_term_signup"
+        app:layout_constraintStart_toStartOf="@+id/cb_term_signup"
+        app:layout_constraintTop_toBottomOf="@+id/cb_term_signup" />
+
+    <TextView
+        android:id="@+id/notif_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="left"
+        android:text="Apakah anda memiliki akun?"
+        android:textColor="#FF0080 "
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signup_login"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_daftar_signup"
+        app:layout_constraintVertical_bias="0.364" />
+
+    <TextView
+        android:id="@+id/signup_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="left"
+        android:text="Masuk"
+        android:textColor="#403FFD"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/notif_login"
+        app:layout_constraintTop_toBottomOf="@+id/bt_daftar_signup"
+        app:layout_constraintVertical_bias="0.364" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

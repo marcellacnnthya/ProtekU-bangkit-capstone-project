@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.history_form.HistoryFragment">
+
+    <LinearLayout
+        android:id="@+id/text_history"
+        android:layout_width="360dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/template_border"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textAlignment="textEnd"
+            android:text="@string/datetime_report"
+            android:textColor="#6179ED"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/description_report"
+            android:textSize="14sp"
+            android:textColor="#403FFD"
+            android:fontFamily="@font/poppins"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_report"
+            android:layout_marginTop="6dp"
+            android:textSize="12sp"
+            android:textColor="#6179ED"
+            android:fontFamily="@font/poppins" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kekerasan seksual"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_ml_reports"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text_history2"
+        android:layout_width="360dp"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_history"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/template_border"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textAlignment="textEnd"
+            android:text="14 Juni 2022"
+            android:textColor="#6179ED"
+            android:fontFamily="@font/poppins"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Lewat jalan sepi di kalibata ngelihat ada beberapa orang yang manggil manggil gitu..."
+            android:textSize="14sp"
+            android:textColor="#403FFD"
+            android:fontFamily="@font/poppins"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Depok, Jawa Barat"
+            android:layout_marginTop="6dp"
+            android:textSize="12sp"
+            android:textColor="#6179ED"
+            android:fontFamily="@font/poppins" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="verbal abuse"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_ml_reports"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

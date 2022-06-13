@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="greet_halo">Halo,</string>
+    <string name="desc_sos2">Tekan tombol selama 3 detik</string>
+    <string name="riwayat_laporan">Riwayat Laporan</string>
+    <string name="sos_button">sos button</string>
+    <string name="logo">logo</string>
+</resources>

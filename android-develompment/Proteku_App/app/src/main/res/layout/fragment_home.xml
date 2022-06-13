@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="730dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteX="-2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.home.HomeFragment">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/desc_date"
+            android:textColor="#9797BF"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ib_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_date"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_greet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/greet_halo"
+            android:textAlignment="center"
+            android:textColor="#FF0080"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/greet_name"
+            android:textColor="#403FFD"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_greet"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+        <TextView
+            android:id="@+id/tv_desc_sos_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/desc_sos_1"
+            android:textColor="#3A3A84"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_desc_sos1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/desc_sos2"
+            android:textColor="#6F6FFD"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc_sos_main" />
+
+        <TextView
+            android:id="@+id/tv_desc_sos2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/desc_sos3"
+            android:textColor="#6F6FFD"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc_sos1" />
+
+        <ImageButton
+            android:id="@+id/bt_sos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="20dp"
+            android:background="#FFFFFF"
+            android:foregroundGravity="center"
+            android:src="@drawable/ic_sos_150"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc_sos2" />
+
+        <Button
+            android:id="@+id/bt_emergency_Call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/template_roundedcorner_button"
+            android:drawableLeft="@drawable/ic_emergency_20"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/_110"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/bt_fake"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_sos" />
+
+        <Button
+            android:id="@+id/bt_fake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/template_roundedcorner_button"
+            android:drawableLeft="@drawable/ic_fake_call_16"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/fake"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_emergency_Call"
+            app:layout_constraintTop_toBottomOf="@+id/bt_sos" />
+
+        <TextView
+            android:id="@+id/tv_emergency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/emergency_call"
+            android:textColor="#FF0080"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_emergency_Call"
+            app:layout_constraintStart_toStartOf="@+id/bt_emergency_Call"
+            app:layout_constraintTop_toBottomOf="@+id/bt_emergency_Call" />
+
+        <TextView
+            android:id="@+id/tv_fake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="@string/fake_call"
+            android:textColor="#FF0080"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/bt_fake"
+            app:layout_constraintStart_toStartOf="@+id/bt_fake"
+            app:layout_constraintTop_toBottomOf="@+id/bt_fake" />
+
+        <TextView
+            android:id="@+id/tv_main_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Apa yang kamu butuhkan?"
+            android:textColor="#3A3A84"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_emergency" />
+
+        <ImageButton
+            android:id="@+id/ib_report_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/template_roundedbutton_image"
+            android:elevation="5dp"
+            android:src="@drawable/reportform_100"
+            app:layout_constraintEnd_toStartOf="@+id/ib_article"
+            app:layout_constraintHorizontal_bias="0.351"
+            app:layout_constraintStart_toStartOf="@+id/tv_main_menu"
+            app:layout_constraintTop_toBottomOf="@+id/tv_main_menu" />
+
+        <TextView
+            android:id="@+id/tv_report_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:text="Form Pelaporan"
+            android:textColor="#3A3A84"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/ib_report_form"
+            app:layout_constraintStart_toStartOf="@+id/ib_report_form"
+            app:layout_constraintTop_toBottomOf="@+id/ib_report_form" />
+
+        <ImageButton
+            android:id="@+id/ib_article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/template_roundedbutton_image"
+            android:elevation="10dp"
+            android:src="@drawable/article_100"
+            app:layout_constraintEnd_toEndOf="@+id/tv_main_menu"
+            app:layout_constraintStart_toEndOf="@+id/ib_report_form"
+            app:layout_constraintTop_toBottomOf="@+id/tv_main_menu" />
+
+        <TextView
+            android:id="@+id/tv_article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/artikel"
+            android:textColor="#3A3A84"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/ib_article"
+            app:layout_constraintStart_toStartOf="@+id/ib_article"
+            app:layout_constraintTop_toBottomOf="@+id/ib_article" />
+
+        <ImageButton
+            android:id="@+id/ib_consul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/template_roundedbutton_image"
+            android:elevation="10dp"
+            android:src="@drawable/consultation_100"
+            app:layout_constraintEnd_toEndOf="@+id/tv_report_form"
+            app:layout_constraintStart_toStartOf="@+id/tv_report_form"
+            app:layout_constraintTop_toBottomOf="@+id/tv_report_form" />
+
+        <TextView
+            android:id="@+id/tv_consul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="50dp"
+            android:text="Konsultasi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ib_consul"
+            app:layout_constraintStart_toStartOf="@+id/ib_consul"
+            app:layout_constraintTop_toBottomOf="@+id/ib_consul" />
+
+        <ImageButton
+            android:id="@+id/ib_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/template_roundedbutton_image"
+            android:elevation="10dp"
+            android:src="@drawable/maps_100"
+            app:layout_constraintEnd_toEndOf="@+id/tv_article"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="@+id/tv_article"
+            app:layout_constraintTop_toBottomOf="@+id/tv_article" />
+
+        <TextView
+            android:id="@+id/tv_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="50dp"
+            android:text="Map"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ib_map"
+            app:layout_constraintStart_toStartOf="@+id/ib_map"
+            app:layout_constraintTop_toBottomOf="@+id/ib_map" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
