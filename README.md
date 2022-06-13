@@ -10,7 +10,7 @@ Sexual harassment cases in Indonesia is one of the most critical issue in Indone
 ### Cloud Computing
 [Cloud Computing Documentation](https://github.com/marcellacnnthya/ProtekU-bangkit-capstone-project/blob/main/cloud-computing/api/README.md)
 ### Machine Learning
-[Machine Learning Documentation]
+[Machine Learning Documentation](https://github.com/marcellacnnthya/ProtekU-bangkit-capstone-project/blob/main/machine-learning/README.md)
 
 ## Members of the Team
 |Learning Path       | Name                      | ID         |
